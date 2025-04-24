@@ -1,0 +1,216 @@
+.slider .btn {
+    margin-top: 20px;
+    opacity: .6;
+
+  }
+
+.btn {
+    border-radius: 3ch !important;
+}  
+
+#mobile-demo {
+    background-color: #00bcd4;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+#mobile-demo li > a {
+    color: whitesmoke !important;
+    font-size: 3ch;
+
+  }
+
+#mobile-demo li {
+    margin: 1.5rem;
+}
+
+.section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 90% !important;
+    border: #f4f4f4 3px solid !important;
+    border-radius: 3ch !important;
+  }
+
+.section-follow .fa-4x {
+    margin: 5px 10px;
+  }
+  
+.section-contact h5 {
+    margin-bottom: 30px;
+  }
+  
+.card-panel {
+    border-radius: 3ch !important;
+  }
+ 
+.card {
+    border-radius: 3ch !important;
+  }
+
+.card-image {
+    border-bottom-style: dotted;
+    border-color: #ffc107;
+    border-width: .3ch;
+  }
+
+.fly {
+    position: relative;
+    -webkit-animation: fly 3s infinite; /* Safari 4.0 - 8.0 */
+    animation: fly 3s infinite;
+}
+
+.rock {
+    position: relative;
+    -webkit-animation: rock 3s infinite; /* Safari 4.0 - 8.0 */
+    animation: rock 3s ease-out infinite;
+}
+
+.shakey:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+.dropdown-content {
+    border-radius: 3ch !important;
+    opacity: .9 !important;
+    border: 1px !important;
+    border-color: turquoise !important;
+    border-style: dotted !important;
+    background-color: skyblue;
+    box-shadow: whitesmoke 0px 3px .5;
+}
+
+.bookBnt:hover {
+    box-shadow: turquoise 0 3px 18px !important;
+}
+
+.bookTxt:hover {
+    color: #00bcd4 !important;
+}
+
+.collection {
+    border-radius: 3ch !important;
+}
+
+.material-placeholder img {
+    border-radius: 1ch !important;
+}
+
+.fb:hover {
+    color: #3B5998 !important;
+}
+.twt:hover {
+    color: #55acee !important;
+}
+.lnk:hover {
+    color: #0077b5 !important;
+}
+.gp:hover {
+    color: #d34836 !important;
+}
+.pin:hover {
+    color: #bd081c !important;
+}
+
+.sidenav-close {
+    border-radius: 3ch !important;
+}
+
+
+/* Animation */
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fly {
+    0% {
+        bottom: -150px;
+        transform: scale(.1);
+        opacity: .1;
+    }
+    50% {
+        bottom: 0px;
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        bottom: 50px;
+        transform: scale(0.5);
+        opacity: .1;       
+    }
+}
+
+@keyframes fly {
+    0% {
+        bottom: -150px;
+        transform: scale(.1);
+        opacity: .1;
+    }
+    50% {
+        bottom: 0px;
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        bottom: 50px;
+        transform: scale(0.5);
+        opacity: .1;       
+    }
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+@-webkit-keyframes rock {
+    0% {
+        bottom: -1px;
+    }
+    50% {
+        left: 1px;
+        bottom: 20px;
+        transform: scale(1.1);
+        transform: rotate(13deg)        
+    }
+    100% {
+        bottom: 0px;
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes rock {
+    0% {
+        bottom: -1px;
+    }
+    50% {
+        left: 1px;
+        bottom: 20px;
+        transform: scale(1.1);
+        transform: rotate(13deg)        
+    }
+    100% {
+        bottom: 0px;
+        transform: rotate(0deg)
+    }
+}
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
